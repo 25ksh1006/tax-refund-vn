@@ -29,5 +29,48 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form Submission Logic
     const form = document.getElementById('refundForm');
     const formSuccess = document.getElementById('formSuccess');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Change button text to indicate loading
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Đang gửi... (전송 중...)';
+        submitBtn.disabled = true;
 
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                // Hide form and show success message
+                form.classList.add('hidden');
+                formSuccess.classList.remove('hidden');
+                
+                // Scroll to success message
+                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                console.error(response);
+                alert('Đã xảy ra lỗi. Vui lòng thử lại sau. (오류가 발생했습니다. 다시 시도해 주세요.)');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Đã xảy ra lỗi. Vui lòng thử lại sau. (오류가 발생했습니다. 다시 시도해 주세요.)');
+        })
+        .finally(() => {
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+        });
+    });
 });
