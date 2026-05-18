@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung Tâm Hoàn Thuế Cho Người Lao Động Nước Ngoài | Nhận lại tiền thuế tại Hàn Quốc</title>
+    <meta name="description" content="Nhận lại tiền thuế bị quên lãng tại Hàn Quốc! Chuyên dành cho người có visa E9, E7, và F. Trung bình nhận lại 2.350.000 KRW.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .footer {
+            background-color: #1a1a1a;
+            color: #888;
+            padding: 40px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer strong {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="trust-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Đối tác Kế toán được Cơ quan Thuế Quốc gia cấp phép
+            </div>
+            <h1>Nhận lại tiền thuế bị quên lãng tại Hàn Quốc!</h1>
+            <p class="subtitle">한국에서 떼인 세금, 지금 돌려받으세요!</p>
+            
+            <div class="highlight-metric">
+                <span class="metric-label">Số Tiền Hoàn Thuế Trung Bình</span>
+                <span class="metric-value">2.350.000 KRW</span>
+                <span class="metric-korean">평균 환급액 235만 원</span>
+            </div>
+            <a href="#consultation" class="btn btn-primary pulse">Kiểm tra hoàn thuế (Miễn phí)</a>
+        </div>
+    </header>
+
+    <!-- Pain Point Section -->
+    <section class="eligibility section" id="eligibility">
+        <div class="container">
+            <h2 class="section-title">Bạn đang làm việc tại Hàn Quốc với visa E9, E7, hoặc F?</h2>
+            <p class="section-subtitle">Bạn có thể đủ điều kiện nhận lại khoản tiền hoàn thuế lớn nếu bạn thuộc bất kỳ trường hợp nào sau đây:</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Hỗ trợ Gia đình</h3>
+                    <p>Bạn gửi tiền hỗ trợ cha mẹ hoặc gia đình tại quê nhà. (본국 부모님 인적공제)</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Thay đổi Nơi làm việc / Visa</h3>
+                    <p>Bạn đã thay đổi nơi làm việc hoặc gia hạn visa gần đây. (근무지 변경 및 비자 연장자)</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Tiền hoàn thuế chưa được nhận</h3>
+                    <p>Kiểm tra các khoản tiền hoàn thuế chưa nhận được tích lũy trong 5 năm qua. (지난 5년간 누적 환급금)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="consultation section bg-light" id="consultation">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="section-title">Kiểm tra điều kiện hoàn thuế của bạn trong 1 phút</h2>
+                <p class="section-subtitle">1분 무료 조회 신청</p>
+                
+                <form id="refundForm" class="refund-form">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên (이름)</label>
+                        <input type="text" id="name" name="name" required placeholder="Nguyen Van A">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số Điện Thoại (전화번호)</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="010-XXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="visa">Loại Visa (비자 종류)</label>
+                        <select id="visa" name="visa" required>
+                            <option value="" disabled selected>Chọn Loại Visa</option>
+                            <option value="E-9">E-9</option>
+                            <option value="E-7">E-7</option>
+                            <option value="F-Visa">F-Visa (F2, F4, F5, F6)</option>
+                            <option value="Other">Khác (Other)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">Quốc Tịch (국적)</label>
+                        <select id="nationality" name="nationality" required>
+                            <option value="" disabled selected>Chọn Quốc Tịch</option>
+                            <option value="Vietnam">Việt Nam (Vietnam)</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Other">Khác (Other)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block pulse">Đăng ký Tư vấn Miễn phí <br><small>(무료 진단 신청하기)</small></button>
+                </form>
+                <div id="formSuccess" class="form-success hidden">
+                    <h3>✅ Đã Nhận Được Đơn Đăng Ký!</h3>
+                    <p>Chuyên gia của chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất để kiểm tra điều kiện của bạn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section" id="process">
+        <div class="container">
+            <h2 class="section-title">Quy trình 3 bước đơn giản</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Gửi Yêu Cầu</h3>
+                        <p>Điền vào biểu mẫu 1 phút ở trên. (1분 신청)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Tư vấn bằng ngôn ngữ mẹ đẻ</h3>
+                        <p>Các chuyên gia của chúng tôi sẽ xem xét hồ sơ và tư vấn cho bạn. (원어민 전문 상담)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Chuyển Khoản Trực Tiếp</h3>
+                        <p>Tiền hoàn thuế của bạn sẽ được chuyển trực tiếp vào tài khoản ngân hàng. (통장으로 환급금 입금)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & FAQ Section -->
+    <section class="trust-faq section bg-light" id="faq">
+        <div class="container">
+            
+            <div class="profile-card">
+                <img src="assets/tax_accountant.png" alt="Certified Korean Tax Accountant" class="profile-img">
+                <div class="profile-info">
+                    <h3>Chuyên gia Thuế Hàn Quốc được Chứng nhận</h3>
+                    <p class="badge">Hơn 15 Năm Kinh Nghiệm</p>
+                    <p>Xử lý an toàn, hợp pháp và nhanh chóng được Cơ quan Thuế Quốc gia ủy quyền.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 40px;">Các Câu Hỏi Thường Gặp</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Điều này có hợp pháp 100% không?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Có, toàn bộ quy trình được thực hiện bởi các chuyên gia thuế Hàn Quốc được chứng nhận, tuân thủ nghiêm ngặt các quy định của Cơ quan Thuế Quốc gia.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Mất bao lâu?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Chúng tôi sẽ cung cấp đánh giá ban đầu nhanh chóng về điều kiện của bạn trong vòng 24-48 giờ sau khi nhận được thông tin.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Kiểm tra ban đầu có miễn phí không?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Có! Việc kiểm tra điều kiện và ước tính số tiền hoàn thuế là hoàn toàn miễn phí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standard Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>Tư vấn Leehyun</strong> (이현컨설팅)</p>
+                <p>Người đại diện: Bae Song-i</p>
+                <p>Mã số kinh doanh: 603-27-73857</p>
+                <p>Địa chỉ kinh doanh: Phòng 419, Gasan Urban Work 1, 143 Gasan digital 2-ro, Geumcheon-gu, Seoul (서울특별시 금천구 가산디지털2로 143, 419호)</p>
+                <p>&copy; 2025 Leehyun Consulting. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Padding for sticky footer -->
+    <div style="height: 90px;"></div>
+
+    <!-- Sticky Mobile Footer -->
+    <div class="sticky-footer">
+        <div class="sticky-footer-container">
+            <a href="#consultation" class="btn btn-primary footer-btn" style="width: 100%;">
+                <span>Kiểm tra miễn phí</span>
+                <small>무료 조회</small>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
